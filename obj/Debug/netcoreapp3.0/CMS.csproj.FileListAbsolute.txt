@@ -1,0 +1,11 @@
+/home/alec/Projects/CMS/bin/Debug/netcoreapp3.0/CMS
+/home/alec/Projects/CMS/bin/Debug/netcoreapp3.0/CMS.deps.json
+/home/alec/Projects/CMS/bin/Debug/netcoreapp3.0/CMS.runtimeconfig.json
+/home/alec/Projects/CMS/bin/Debug/netcoreapp3.0/CMS.runtimeconfig.dev.json
+/home/alec/Projects/CMS/bin/Debug/netcoreapp3.0/CMS.dll
+/home/alec/Projects/CMS/bin/Debug/netcoreapp3.0/CMS.pdb
+/home/alec/Projects/CMS/obj/Debug/netcoreapp3.0/CMS.csprojAssemblyReference.cache
+/home/alec/Projects/CMS/obj/Debug/netcoreapp3.0/CMS.AssemblyInfoInputs.cache
+/home/alec/Projects/CMS/obj/Debug/netcoreapp3.0/CMS.AssemblyInfo.cs
+/home/alec/Projects/CMS/obj/Debug/netcoreapp3.0/CMS.dll
+/home/alec/Projects/CMS/obj/Debug/netcoreapp3.0/CMS.pdb
