@@ -1,0 +1,30 @@
+#########################################################################################
+#                                    CMS: DEV PLAN                                      #
+#########################################################################################
+
+	{1/9/20}
+
+>> Purpose, mission statement
+>> Requirements
+>> Use Cases
+>> Deliverables Timeline
+>> Create speadsheet with TODO/DONE/INPROGRESS use cases
+   :: prioritize spreadsheet by a "bottom-up" approach
+>> Create Burndown Graph for Use Cases
+>> Two-week sprints
+>> Check in with Andrew weekly, have something to show!
+
+
+//[A TYPICAL SPRINT]/////////////////////////////////////////////////////////////////////
+
+1. Choose use case(s) -- outline objective(s)
+2. Create a pre-sprint report summarizing sprint goal(s)
+3. Development & testing
+4. Quality Assurance
+5. Integrate; commit, push
+6. Update burndown graph to reflect progress (or lack thereof) on use case(s)
+7. Create post-sprint report summarizing work done and ambitions for next sprint
+
+#########################################################################################
+#                     AUTHOR: ALEC GOLDSTEIN, FIREFLY HACKS -- 2020                     #
+#########################################################################################
