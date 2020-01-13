@@ -4,7 +4,7 @@
 
 	{1/9/20}
 
->> Purpose, mission statement
+>> Pre-dev receipt
 >> Requirements
 >> Use Cases
 >> Deliverables Timeline
@@ -12,7 +12,7 @@
    :: prioritize spreadsheet by a "bottom-up" approach
 >> Create Burndown Graph for Use Cases
 >> Two-week sprints
->> Check in with Andrew weekly, have something to show!
+>> Check in with [REDACTED] weekly, have something to show!
 
 
 //[A TYPICAL SPRINT]/////////////////////////////////////////////////////////////////////

@@ -1,0 +1,22 @@
+#########################################################################################
+#                                     CMS: FORWARD                                      #
+#########################################################################################
+
+    {1/12/20}
+
+    Let this document serve as a receipt offical business -- that as of the 7th of 
+    January, 2020, Firefly Hacks is contractually responsible for the creation and 
+    delivery of software that shall meet the specifications as defined by [REDACTED]. 
+
+        CANONICAL NAME.................CMS
+        PURPOSE........................DATA MGMT/MANIPULATION/ARCHIVING SOFTWARE
+        LANG/FRAMEWORK.................C#
+        INTENDED PLATFORM..............WINDOWSx64
+        INTENDED SETTING...............PROFESSIONAL/WORKPLACE
+        
+    DUE DATE...........................03/12/20
+
+
+#########################################################################################
+#                     AUTHOR: ALEC GOLDSTEIN, FIREFLY HACKS -- 2020                     #
+#########################################################################################
