@@ -4,7 +4,7 @@
 
     {1/12/20}
 
-    Let this document serve as a receipt offical business -- that as of the 7th of 
+    Let this document serve as a receipt of offical business -- that as of the 7th of 
     January, 2020, Firefly Hacks is contractually responsible for the creation and 
     delivery of software that shall meet the specifications as defined by [REDACTED]. 
 
