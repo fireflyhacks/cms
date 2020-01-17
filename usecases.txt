@@ -28,7 +28,8 @@
 ║  U3A  ║           Manual backup            ║ » USR selects manual backup from menus.         ║    L2    ║
 ║       ║                                    ║ » SYS sends backup to selected location.        ║          ║
 ╠═══════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║  U3B  ║      Automatic system backup       ║ » U2A OR U3A OR SYS has been online for 1 hour. ║    L1    ║
+║  U3B  ║      Automatic system backup       ║ » U2A OR SYS has been online for 1 hour OR SYS  ║    L1    ║
+║       ║                                    ║   online AND 1 hour since last backup.          ║          ║
 ╠═══════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║       ║                                    ║ » U1                                            ║          ║
 ║       ║                                    ║ » USR selects PROFILES page.                    ║          ║
