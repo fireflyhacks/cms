@@ -1,0 +1,39 @@
+#########################################################################################
+#                      CMS: PRE-SPRINT REPORT 01/14 >> 01/28 (S0)                       #
+#########################################################################################
+
+    {01/18/20}
+
+    The primary objectives for the initial sprint is to complete all documentation
+required to begin development. Deliverables for this project will not include working 
+code. No use cases or requirements will be met in this sprint (S0). Note that henceforth, 
+all sprints will be referred to--past, present, and future--by their alphanumeric 
+identifier (S{X}).
+
+//[DELIVERABLES FOR S0]//////////////////////////////////////////////////////////////////
+
+    1. Pre-dev Receipt of Commission
+    2. Requirements Sheet
+    3. Use Case Guide
+    4. Sprint Schedule
+    5. Progress Spreadsheet
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+    :: The above artifacts will be present in the official CMS repository 
+       {github.com/fireflyhacks/cms} on or before the date of 01/28/20; 23:59 EST, unless 
+       otherwise specified by the project manager via email.
+
+    :: The meeting to be held on the aboce date will both discuss these artifacts and 
+       present the S0 Post-Sprint Report. Note that all future Pre-Sprint Reports will
+       be delivered on the first day of the sprint with which they are associated. The
+       tardiness of this report is the result of a scheduling error by the project 
+       manager.
+
+    :: Please direct any and all inquiries/suggestions to 
+       Alec Goldstein: Project Manager {alec@alecgoldstein.com}; subject line of type 
+       "CMS: [summary-of-inquiry-or-concern]".
+
+#########################################################################################
+#                     AUTHOR: ALEC GOLDSTEIN, FIREFLY HACKS -- 2020                     #
+#########################################################################################

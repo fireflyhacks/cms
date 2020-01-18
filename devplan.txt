@@ -7,7 +7,7 @@
 >> Pre-dev receipt
 >> Requirements
 >> Use Cases
->> Deliverables Timeline
+>> Sprint Schedule (Deliverables Timeline)
 >> Create speadsheet with TODO/DONE/INPROGRESS use cases
    :: prioritize spreadsheet by a "bottom-up" approach
 >> Create Burndown Graph for Use Cases
