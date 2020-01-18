@@ -4,7 +4,7 @@
 
     {01/18/20}
 
-    The primary objectives for the initial sprint is to complete all documentation
+    The primary objective for the initial sprint is to complete all documentation
 required to begin development. Deliverables for this project will not include working 
 code. No use cases or requirements will be met in this sprint (S0). Note that henceforth, 
 all sprints will be referred to--past, present, and future--by their alphanumeric 
@@ -24,7 +24,7 @@ identifier (S{X}).
        {github.com/fireflyhacks/cms} on or before the date of 01/28/20; 23:59 EST, unless 
        otherwise specified by the project manager via email.
 
-    :: The meeting to be held on the aboce date will both discuss these artifacts and 
+    :: The meeting to be held on the above date will both discuss these artifacts and 
        present the S0 Post-Sprint Report. Note that all future Pre-Sprint Reports will
        be delivered on the first day of the sprint with which they are associated. The
        tardiness of this report is the result of a scheduling error by the project 
