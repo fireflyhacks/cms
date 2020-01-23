@@ -138,7 +138,38 @@
 ║        ║                                    ║ » USR sets desired interval(s) for alert(s).    ║          ║
 ║        ║                                    ║ » SYS now sends alert(s) at desired interval(s).║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║   U7   ║                                    ║                                                 ║          ║
+║        ║                                    ║ » There exists a client whose HH+ renewal date  ║          ║
+║  U7.1  ║         HH+ Renewal Alert          ║   is 30 days from the current date.             ║    L2    ║
+║        ║                                    ║ » SYS sends HH+ renewal alert.                  ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client who underwent a TOC.    ║          ║
+║  U7.2  ║     TOC Structure Report Alert     ║ » SYS sends TOC Structure Report Alert for the  ║    L2    ║
+║        ║                                    ║   associated client.                            ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client who underwent a TOC.    ║          ║
+║  U7.3  ║        TOC Checklist Alert         ║ » SYS sends TOC Checklist Alert for the         ║    L2    ║
+║        ║                                    ║   associated client.                            ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client whose Comp due date is  ║          ║
+║  U7.4  ║            Comp Alert              ║   approaching.                                  ║    L2    ║
+║        ║                                    ║ » SYS sends Comp Alert for the client.          ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client whose Careplan due date ║          ║
+║  U7.5  ║          Careplan Alert            ║   is approaching.                               ║    L2    ║
+║        ║                                    ║ » SYS sends Careplan Alert for the client.      ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client whose HARP assessment   ║          ║
+║  U7.6  ║            HARP Alert              ║   due date is approaching.                      ║    L2    ║
+║        ║                                    ║ » SYS sends HARP Alert for the client.          ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client whose HML due date      ║          ║
+║ U7.7.1 ║   HML Alert for non-HH+ client     ║   is approaching.                               ║    L2    ║
+║        ║                                    ║ » SYS sends HML Alert for the client.           ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » There exists a client whose HML due date      ║          ║
+║ U7.7.2 ║     HML Alert for HH+ client       ║   is approaching.                               ║    L2    ║
+║        ║                                    ║ » Clinet encounter requirements have been met.  ║          ║
+║        ║                                    ║ » SYS sends HML Alert for the client.           ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║   U8   ║                                    ║                                                 ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
