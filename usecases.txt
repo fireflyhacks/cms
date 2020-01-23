@@ -168,7 +168,7 @@
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » There exists a client whose HML due date      ║          ║
 ║ U7.7.2 ║     HML Alert for HH+ client       ║   is approaching.                               ║    L2    ║
-║        ║                                    ║ » Clinet encounter requirements have been met.  ║          ║
+║        ║                                    ║ » Client encounter requirements have been met.  ║          ║
 ║        ║                                    ║ » SYS sends HML Alert for the client.           ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║   U8   ║                                    ║                                                 ║          ║
