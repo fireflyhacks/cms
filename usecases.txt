@@ -177,15 +177,95 @@
 ║        ║                                    ║ » SYS populates TOC page with NAME.             ║          ║
 ║        ║                                    ║ » U7.2 AND U7.3                                 ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║   U9   ║                                    ║                                                 ║          ║
+║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » USR selects REPORTS page.                     ║          ║
+║  U9.1  ║       Generate Master List         ║ » USR selects MASTER LIST>[STATUS].             ║    L2    ║
+║        ║                                    ║ » USR chooses client attributes to be included. ║          ║
+║        ║                                    ║ » SYS generates list with specified data of all ║          ║
+║        ║                                    ║   clients with specified STATUS.                ║          ║
+║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║   U10  ║                                    ║                                                 ║          ║
+║        ║                                    ║ » U9.1                                          ║          ║
+║ U9.1.1 ║         SAVE Master List           ║ » USR selects SAVE.                             ║    L2    ║
+║        ║                                    ║ » SYS saves report to REPORT LIST with name of  ║          ║
+║        ║                                    ║   type: [REPORT-TYPE]+[DATE|TIME]               ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U9.1                                          ║          ║
+║ U9.1.2 ║        CANCEL Master List          ║ » USR selects CANCEL.                           ║    L2    ║
+║        ║                                    ║ » SYS deletes generated report.                 ║          ║
+║        ║                                    ║ » SYS returns to REPORTS page.                  ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U9.1                                          ║          ║
+║        ║                                    ║ » USR selects EDIT.                             ║          ║
+║ U9.1.3 ║         EDIT Master List           ║ » SYS displays REPORT EDIT dialog.              ║    L3    ║
+║        ║                                    ║ » USR chooses attributes/options.               ║          ║
+║        ║                                    ║ » USR chooses DONE.                             ║          ║
+║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » USR selects REPORTS page.                     ║          ║
+║        ║                                    ║ » USR selects [REPORT-TYPE].                    ║          ║
+║  U9.2  ║  Generate [REPORT-TYPE] Report**   ║ » USR chooses options for report.               ║    L2    ║
+║        ║                                    ║ » SYS generates [REPORT-TYPE] report.           ║          ║
+║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║ U9.2.1 ║     SAVE [REPORT-TYPE] Report      ║ » See U9.1.1, line 2>>end                       ║    L2    ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║ U9.2.2 ║    CANCEL [REPORT-TYPE] Report     ║ » See U9.1.2, line 2>>end                       ║    L2    ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║ U9.2.3 ║     EDIT [REPORT-TYPE] Report      ║ » See U9.1.3, line 2>>end                       ║    L3    ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U9.*                                          ║          ║
+║        ║                                    ║ » USR chooses report from REPORT LIST.          ║          ║
+║        ║                                    ║ » SYS displays REPORT OPTIONS dialog.           ║          ║
+║  U10   ║      Print Report from list        ║ » USR selects PRINT.                            ║    L2    ║
+║        ║                                    ║ » SYS displays print dialog.                    ║          ║
+║        ║                                    ║ » USR confirms print preferences.               ║          ║
+║        ║                                    ║ » SYS sends report to printer.                  ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U9.*                                          ║          ║
+║        ║                                    ║ » USR chooses report from REPORT LIST.          ║          ║
+║  U11   ║      Delete Report from list       ║ » SYS displays REPORT OPTIONS dialog.           ║    L2    ║
+║        ║                                    ║ » USR selects DELETE.                           ║          ║
+║        ║                                    ║ » SYS displays confirmation dialog.             ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U11                                           ║          ║
+║ U11.1  ║       Confirm Delete Report        ║ » USR selects CONFIRM.                          ║    L2    ║
+║        ║                                    ║ » Report is deleted from SYS.                   ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U11                                           ║          ║
+║ U11.2  ║       Cancel Delete Report         ║ » USR selects CANCEL.                           ║    L2    ║
+║        ║                                    ║ » Report remains in REPORT LIST.                ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » USR navigates to REPORTS page.                ║          ║
+║        ║                                    ║ » USR chooses report from report list.          ║          ║
+║        ║                                    ║ » USR selects EDIT.                             ║          ║
+║  U12   ║       Edit Report from list        ║ » SYS displays REPORT EDIT dialog.              ║    L3    ║
+║        ║                                    ║ » USR chooses attributes.                       ║          ║
+║        ║                                    ║ » USR chooses DONE.                             ║          ║
+║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » SYS>>DATE is end of calendar month.           ║          ║
+║  U13   ║     COMPLETED-TOC Auto-Archive     ║ » SYS generates COMPLETED-TOC REPORT.           ║    L2    ║
+║        ║                                    ║ » SYS sends COMPLETED-TOC REPORT to ARCHIVE.    ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » USR navigates to REPORTS page.                ║          ║
+║        ║                                    ║ » USR chooses report from REPORT LIST.          ║          ║
+║  U14   ║       Manual Report Archive        ║ » USR selects ARCHIVE.                          ║    L3    ║
+║        ║                                    ║ » SYS sends selected report to ARCHIVE.         ║          ║
+║        ║                                    ║ » SYS removes selected report from REPORT LIST. ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » USR navigates to PREFERENCES>PRINTING>SETUP.  ║          ║
+║  U15   ║           Printer Setup            ║ » SYS displays print setup dialog.              ║    L2    ║
+║        ║                                    ║ » USR configures printer.                       ║          ║
+║        ║                                    ║ » SYS now uses specified print settings.        ║          ║
 ╚════════╩════════════════════════════════════╩═════════════════════════════════════════════════╩══════════╝
 
                          ╔═══════════════════════════════════════════════════════╗
                          ║ :: PRIORITY where L3 < L2 < L1                        ║
                          ║ :: USR abbreviates User                               ║
                          ║ :: SYS abbreviates System                             ║
+                         ║ ** [REPORT-TYPE] is a variable with possible value:   ║
+                         ║    {HML,COMP,CAREPLAN,HARP,TOC}                       ║
                          ╚═══════════════════════════════════════════════════════╝
 
 ############################################################################################################
