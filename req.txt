@@ -16,7 +16,10 @@
 ╠══════╬══════════════════════════════════════════════════╬══════════╣
 ║      ║ The system will automatically output backups to  ║          ║
 ║  R4* ║ a user-defined location on close and once every  ║    L1    ║
-║      ║ 24 hours.                                        ║          ║
+║      ║ 4 hours.                                         ║          ║
+╠══════╬══════════════════════════════════════════════════╬══════════╣
+║  R4A ║ System backup filenames will be of the format:   ║    L1    ║
+║      ║ [REPORT-TYPE] + "_" + [HHMM] + "_" + [MM/DD/YY]  ║          ║
 ╠══════╬══════════════════════════════════════════════════╬══════════╣
 ║  R5  ║ The functions of the system will not require     ║    L1    ║
 ║      ║ internet connectivity.                           ║          ║

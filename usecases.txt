@@ -7,31 +7,42 @@
 ╔════════╦════════════════════════════════════╦═════════════════════════════════════════════════╦══════════╗
 ║   UC#  ║            DESCRIPTION             ║                       STORY                     ║ PRIORITY ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » SYS displays a login field.                   ║          ║
-║   U1   ║            User login              ║ » USR provides a valid password.                ║    L1    ║
+║        ║                                    ║ » SYS displays login screen.                    ║          ║
+║   U1   ║            User login              ║ » USR provides valid username and password.     ║    L1    ║
 ║        ║                                    ║ » SYS displays the HOME page.                   ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║   U2   ║            User logout             ║ » USR selects logout function from menu         ║    L1    ║
-║        ║                                    ║ » SYS displays lock screen                      ║          ║
+║   U2   ║            User logout             ║ » USR selects logout function from menu.        ║    L1    ║
+║        ║                                    ║ » SYS displays login screen.                    ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║   U2A  ║       Automatic user logout        ║ » SYS remains idle for 10 minutes.              ║          ║
-║        ║                                    ║ » SYS displays logout countdown.                ║    L1    ║
+║   U2A  ║            System Lock             ║ » USR selects lock function from menu.          ║    L1    ║
+║        ║                                    ║ » SYS displays lock screen.                     ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║   U2B  ║           System Unlock            ║ » USR enters valid password at lock screen.     ║    L1    ║
+║        ║                                    ║ » SYS resumes.                                  ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » SYS remains idle for 9 minutes.               ║          ║
+║   U2C  ║       Automatic System lock        ║ » SYS displays lockscreen countdown for 1 min.  ║    L1    ║
 ║        ║                                    ║ » USR does not respond for length of timer.     ║          ║
 ║        ║                                    ║ » SYS displays lock screen.                     ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║   U3   ║      Backup location selection     ║ » USR navigates to PREFERENCES>BACKUPS.         ║    L1    ║
 ║        ║                                    ║ » USR selects desired backup location.          ║          ║
 ║        ║                                    ║ » SYS now sends backups to selected location.   ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║   U3A  ║           Manual backup            ║ » USR selects manual backup from menus.         ║    L2    ║
 ║        ║                                    ║ » SYS sends backup to selected location.        ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║   U3B  ║      Automatic system backup       ║ » U2A OR SYS has been online for 1 hour OR SYS  ║    L1    ║
-║        ║                                    ║   online AND 1 hour since last backup.          ║          ║
+║   U3B  ║      Automatic system backup       ║ » U2 OR SYS has been online for 4 hours OR SYS  ║    L1    ║
+║        ║                                    ║   online AND 4 hours since last backup.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » SYS OR USR has created a backup.              ║          ║
+║   U3C  ║      Automatic Backup purge        ║ » Number of stored backups is 5.                ║    L1    ║
+║        ║                                    ║ » Oldest backup is deleted.                     ║          ║
+║        ║                                    ║ » Newest backup is added to storage.            ║          ║
+╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║        ║                                    ║ » USR selects PROFILES page.                    ║          ║
 ║   U4   ║           Add new client           ║ » SYS displays PROFILES page.                   ║    L2    ║
 ║        ║                                    ║ » USR selects PROFILES>NEW PROFILE.             ║          ║
@@ -41,13 +52,14 @@
 ║        ║                                    ║ » U4                                            ║          ║
 ║  U4.1  ║     New client data entry SAVE     ║ » USR selects SAVE.                             ║    L2    ║
 ║        ║                                    ║ » SYS creates new PROFILE with entered data.    ║          ║
+║        ║                                    ║ » SYS increments ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » U4                                            ║          ║
 ║  U4.2  ║    New client data entry CANCEL    ║ » USR selects CANCEL.                           ║    L2    ║
 ║        ║                                    ║ » SYS discards entered data.                    ║          ║
 ║        ║                                    ║ » SYS displays PROFILES page.                   ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║        ║                                    ║ » USR selects PROFILES page.                    ║          ║
 ║   U5   ║         Edit Client Status         ║ » SYS displays PROFILES page.                   ║    L2    ║
 ║        ║                                    ║ » USR selects client and CHANGE STATUS.         ║          ║
@@ -66,6 +78,7 @@
 ║        ║          ACTIVE >> PENDED          ║   except HML.                                   ║          ║
 ║        ║                                    ║ » SYS does not allow client to be actionable or ║          ║
 ║        ║                                    ║   trigger alerts.                               ║          ║
+║        ║                                    ║ » SYS decrements ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » U5                                            ║          ║
 ║        ║                                    ║ » USR selects DILIGENT.                         ║          ║
@@ -77,10 +90,11 @@
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » U5                                            ║          ║
 ║        ║                                    ║ » USR selects DISCHARGE.                        ║          ║
-║ U5.1.4 ║       Client status change:        ║ » SYS changes client status to DISCHARGE.       ║    L2    ║
-║        ║        ACTIVE >> DISCHARGE         ║ » SYS does not allow client to be actionable,   ║          ║
-║        ║                                    ║   appear in reports, or trigger alerts.         ║          ║
+║        ║                                    ║ » SYS changes client status to DISCHARGE.       ║          ║
+║ U5.1.4 ║       Client status change:        ║ » SYS does not allow client to be actionable,   ║    L2    ║
+║        ║        ACTIVE >> DISCHARGE         ║   appear in reports, or trigger alerts.         ║          ║
 ║        ║                                    ║ » SYS moves client to ARCHIVE.                  ║          ║
+║        ║                                    ║ » SYS decrements ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » U5                                            ║          ║
 ║ U5.2.1 ║       Client status change:        ║ » USR selects PENDED.                           ║    L2    ║
@@ -88,13 +102,15 @@
 ║        ║                                    ║   a different status.                           ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » U5                                            ║          ║
-║        ║       Client status change:        ║ » USR selects ACTIVE.                           ║          ║
-║ U5.2.2 ║         PENDED >> ACTIVE           ║ » SYS changes client status to ACTIVE.          ║    L2    ║
-║        ║                                    ║ » SYS allows client to be actionable, appear in ║          ║
+║        ║                                    ║ » USR selects ACTIVE.                           ║          ║
+║ U5.2.2 ║       Client status change:        ║ » SYS changes client status to ACTIVE.          ║    L2    ║
+║        ║         PENDED >> ACTIVE           ║ » SYS allows client to be actionable, appear in ║          ║
 ║        ║                                    ║   reports, and trigger alerts.                  ║          ║
+║        ║                                    ║ » SYS increments ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║ U5.2.3 ║       Client status change:        ║ » SYS displays message prompting USR to choose  ║    L2    ║
-║        ║         PENDED >> DILIGENT         ║   a different status.                           ║          ║
+║        ║                                    ║ » SYS displays message prompting USR to choose  ║          ║
+║ U5.2.3 ║       Client status change:        ║   a different status.                           ║    L2    ║
+║        ║        PENDED >> DILIGENT          ║ » SYS increments ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║ U5.2.4 ║       Client status change:        ║ » See U5.1.4                                    ║    L2    ║
 ║        ║        PENDED >> DISCHARGE         ║                                                 ║          ║
@@ -108,13 +124,15 @@
 ║ U5.3.2 ║        DILIGENT >> ACTIVE          ║ » SYS ends DILIGENT MONTH COUNTER for client.   ║    L2    ║
 ║        ║                                    ║ » SYS ends DISCHARGE TIMER for client.          ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║       Client status change:        ║ » See U5.1.2                                    ║          ║
-║ U5.3.3 ║        DILIGENT >> PENDED          ║ » SYS ends DILIGENT MONTH COUNTER for client.   ║    L2    ║
-║        ║                                    ║ » SYS ends DISCHARGE TIMER for client.          ║          ║
+║        ║                                    ║ » See U5.1.2                                    ║          ║
+║ U5.3.3 ║       Client status change:        ║ » SYS ends DILIGENT MONTH COUNTER for client.   ║    L2    ║
+║        ║        DILIGENT >> PENDED          ║ » SYS ends DISCHARGE TIMER for client.          ║          ║
+║        ║                                    ║ » SYS decrements ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║       Client status change:        ║ » See U5.1.4                                    ║          ║
-║ U5.3.4 ║       DILIGENT >> DISCHARGE        ║ » SYS ends DILIGENT MONTH COUNTER for client.   ║    L2    ║
-║        ║                                    ║ » SYS ends DISCHARGE TIMER for client.          ║          ║
+║        ║                                    ║ » See U5.1.4                                    ║          ║
+║ U5.3.4 ║       Client status change:        ║ » SYS ends DILIGENT MONTH COUNTER for client.   ║    L2    ║
+║        ║       DILIGENT >> DISCHARGE        ║ » SYS ends DISCHARGE TIMER for client.          ║          ║
+║        ║                                    ║ » SYS decrements ACTIVE CLIENT COUNTER.         ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║ U5.4.1 ║       Client status change:        ║ » Invalid use case. clients with status         ║    L3    ║
 ║        ║       DISCHARGE >> DISCHARGE       ║   DISCHARGE are in archive and not actionable.  ║          ║
@@ -133,7 +151,7 @@
 ║        ║                                    ║ » SYS sends alert to change client status to    ║          ║
 ║        ║                                    ║   DISCHARGE.                                    ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║   U6   ║       Edit alert interval(s)       ║ » USR navigates to PREFERENCES>ALERTS.          ║    L3    ║
 ║        ║                                    ║ » USR sets desired interval(s) for alert(s).    ║          ║
 ║        ║                                    ║ » SYS now sends alert(s) at desired interval(s).║          ║
@@ -143,7 +161,7 @@
 ║        ║                                    ║ » SYS sends HH+ renewal alert.                  ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » There exists a client who underwent a TOC.    ║          ║
-║  U7.2  ║     TOC Structure Report Alert     ║ » SYS sends TOC Structure Report Alert for the  ║    L2    ║
+║  U7.2  ║     TOC Structure Note Alert       ║ » SYS sends TOC Structure Note Alert for the    ║    L2    ║
 ║        ║                                    ║   associated client.                            ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » There exists a client who underwent a TOC.    ║          ║
@@ -163,101 +181,29 @@
 ║        ║                                    ║ » SYS sends HARP Alert for the client.          ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » There exists a client whose HML due date      ║          ║
-║ U7.7.1 ║   HML Alert for non-HH+ client     ║   is approaching.                               ║    L2    ║
-║        ║                                    ║ » SYS sends HML Alert for the client.           ║          ║
+║  U7.7  ║       Incomplete HH+ Alert         ║   is 10 days from current date.                 ║    L2    ║
+║        ║                                    ║ » HH+ requirements have not been met.           ║          ║
+║        ║                                    ║ » SYS sends Incomplete HH+ Alert for client.    ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » There exists a client whose HML due date      ║          ║
-║ U7.7.2 ║     HML Alert for HH+ client       ║   is approaching.                               ║    L2    ║
-║        ║                                    ║ » Client encounter requirements have been met.  ║          ║
-║        ║                                    ║ » SYS sends HML Alert for the client.           ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║        ║                                    ║ » USR selects PROFILES page.                    ║          ║
 ║   U8   ║          Create New TOC            ║ » USR selects NEW TOC.                          ║    L2    ║
 ║        ║                                    ║ » SYS populates TOC page with NAME.             ║          ║
 ║        ║                                    ║ » U7.2 AND U7.3                                 ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U1                                            ║          ║
+║        ║                                    ║ » U1 OR U2B                                     ║          ║
 ║        ║                                    ║ » USR selects REPORTS page.                     ║          ║
-║  U9.1  ║       Generate Master List         ║ » USR selects MASTER LIST>[STATUS].             ║    L2    ║
-║        ║                                    ║ » USR chooses client attributes to be included. ║          ║
+║        ║                                    ║ » USR selects MASTER LIST>[STATUS].             ║          ║
+║   U9   ║        Generate Master List        ║ » USR chooses client attributes to be included. ║    L2    ║
 ║        ║                                    ║ » SYS generates list with specified data of all ║          ║
 ║        ║                                    ║   clients with specified STATUS.                ║          ║
-║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U9.1                                          ║          ║
-║ U9.1.1 ║         SAVE Master List           ║ » USR selects SAVE.                             ║    L2    ║
-║        ║                                    ║ » SYS saves report to REPORT LIST with name of  ║          ║
-║        ║                                    ║   type: [REPORT-TYPE]+[DATE|TIME]               ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U9.1                                          ║          ║
-║ U9.1.2 ║        CANCEL Master List          ║ » USR selects CANCEL.                           ║    L2    ║
-║        ║                                    ║ » SYS deletes generated report.                 ║          ║
-║        ║                                    ║ » SYS returns to REPORTS page.                  ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U9.1                                          ║          ║
-║        ║                                    ║ » USR selects EDIT.                             ║          ║
-║ U9.1.3 ║         EDIT Master List           ║ » SYS displays REPORT EDIT dialog.              ║    L3    ║
-║        ║                                    ║ » USR chooses attributes/options.               ║          ║
-║        ║                                    ║ » USR chooses DONE.                             ║          ║
-║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
+║        ║                                    ║ » SYS opens report in default PDF viewer.       ║          ║
 ╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
 ║        ║                                    ║ » USR selects REPORTS page.                     ║          ║
 ║        ║                                    ║ » USR selects [REPORT-TYPE].                    ║          ║
-║  U9.2  ║  Generate [REPORT-TYPE] Report**   ║ » USR chooses options for report.               ║    L2    ║
+║   U10  ║  Generate [REPORT-TYPE] Report**   ║ » USR chooses options for report.               ║    L2    ║
 ║        ║                                    ║ » SYS generates [REPORT-TYPE] report.           ║          ║
-║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║ U9.2.1 ║     SAVE [REPORT-TYPE] Report      ║ » See U9.1.1, line 2>>end                       ║    L2    ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║ U9.2.2 ║    CANCEL [REPORT-TYPE] Report     ║ » See U9.1.2, line 2>>end                       ║    L2    ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║ U9.2.3 ║     EDIT [REPORT-TYPE] Report      ║ » See U9.1.3, line 2>>end                       ║    L3    ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U9.*                                          ║          ║
-║        ║                                    ║ » USR chooses report from REPORT LIST.          ║          ║
-║        ║                                    ║ » SYS displays REPORT OPTIONS dialog.           ║          ║
-║  U10   ║      Print Report from list        ║ » USR selects PRINT.                            ║    L2    ║
-║        ║                                    ║ » SYS displays print dialog.                    ║          ║
-║        ║                                    ║ » USR confirms print preferences.               ║          ║
-║        ║                                    ║ » SYS sends report to printer.                  ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U9.*                                          ║          ║
-║        ║                                    ║ » USR chooses report from REPORT LIST.          ║          ║
-║  U11   ║      Delete Report from list       ║ » SYS displays REPORT OPTIONS dialog.           ║    L2    ║
-║        ║                                    ║ » USR selects DELETE.                           ║          ║
-║        ║                                    ║ » SYS displays confirmation dialog.             ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U11                                           ║          ║
-║ U11.1  ║       Confirm Delete Report        ║ » USR selects CONFIRM.                          ║    L2    ║
-║        ║                                    ║ » Report is deleted from SYS.                   ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » U11                                           ║          ║
-║ U11.2  ║       Cancel Delete Report         ║ » USR selects CANCEL.                           ║    L2    ║
-║        ║                                    ║ » Report remains in REPORT LIST.                ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » USR navigates to REPORTS page.                ║          ║
-║        ║                                    ║ » USR chooses report from report list.          ║          ║
-║        ║                                    ║ » USR selects EDIT.                             ║          ║
-║  U12   ║       Edit Report from list        ║ » SYS displays REPORT EDIT dialog.              ║    L3    ║
-║        ║                                    ║ » USR chooses attributes.                       ║          ║
-║        ║                                    ║ » USR chooses DONE.                             ║          ║
-║        ║                                    ║ » SYS displays SAVE/CANCEL/EDIT dialog.         ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » SYS>>DATE is end of calendar month.           ║          ║
-║  U13   ║     COMPLETED-TOC Auto-Archive     ║ » SYS generates COMPLETED-TOC REPORT.           ║    L2    ║
-║        ║                                    ║ » SYS sends COMPLETED-TOC REPORT to ARCHIVE.    ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » USR navigates to REPORTS page.                ║          ║
-║        ║                                    ║ » USR chooses report from REPORT LIST.          ║          ║
-║  U14   ║       Manual Report Archive        ║ » USR selects ARCHIVE.                          ║    L3    ║
-║        ║                                    ║ » SYS sends selected report to ARCHIVE.         ║          ║
-║        ║                                    ║ » SYS removes selected report from REPORT LIST. ║          ║
-╠════════╬════════════════════════════════════╬═════════════════════════════════════════════════╬══════════╣
-║        ║                                    ║ » USR navigates to PREFERENCES>PRINTING>SETUP.  ║          ║
-║  U15   ║           Printer Setup            ║ » SYS displays print setup dialog.              ║    L2    ║
-║        ║                                    ║ » USR configures printer.                       ║          ║
-║        ║                                    ║ » SYS now uses specified print settings.        ║          ║
+║        ║                                    ║ » SYS opens report in default PDF viewer.       ║          ║
 ╚════════╩════════════════════════════════════╩═════════════════════════════════════════════════╩══════════╝
 
                          ╔═══════════════════════════════════════════════════════╗
