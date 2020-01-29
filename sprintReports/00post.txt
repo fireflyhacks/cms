@@ -1,0 +1,29 @@
+#########################################################################################
+#                      CMS: POST-SPRINT REPORT 01/14 >> 01/28 (S0)                      #
+#########################################################################################
+
+    {1/28/20}
+
+    The objective for S0 was to create the documentation necessary to begin development
+and quality control procedures. Most of the S0 deliverables were completed as of
+01/26/20, the exceptions being the Sprint Schedule and accompanying spreadsheet, as an 
+oversight by the project manager pertaining to the information required to create it. 
+
+    The meeting held with the client on 01/28/20 brought to light significant changes 
+that needed to be made to the previously created documentation. As a result, the time 
+which had been set aside to create the Sprint Schedule was instead used to update the 
+requirements and use cases. Furthermore, the spreadsheet depicting completion of use 
+cases cannot be created until the Sprint Schedule is derived. Pending verdict from the 
+project manager may also rule out the spreadsheet altogether as an unnecessary asset, 
+as it has little to contribute to the project as a whole.
+
+    The Sprint Schedule will be delivered on 01/29/20 along with the S1 Pre-Sprint
+Report. Likely to be discussed in the S1 Pre-Sprint Report are plans for use cases which
+will deliver basic, but tangible, functionality. S1 will also be the first sprint to
+include processes of development and quality assurance. Relevant documentation 
+pertaining to empirical measures of quality, a report of the components under test, 
+and the results of said tests are likely to be deliverables for 02/11/20, the end of S1. 
+
+#########################################################################################
+#                     AUTHOR: ALEC GOLDSTEIN, FIREFLY HACKS -- 2020                     #
+#########################################################################################
