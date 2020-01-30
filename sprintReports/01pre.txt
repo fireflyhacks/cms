@@ -1,0 +1,41 @@
+#########################################################################################
+#                      CMS: PRE-SPRINT REPORT 01/28 >> 02/11 (S1)                       #
+#########################################################################################
+
+    {1/29/20}
+
+    S1 will be the initial phase of development and quality assurance. The documentation
+required of S0 is now in order, and the development and testing of a functional program
+are slated to begin. The processes to take place in S1 may require evaluation and
+adjustment based on daily performance, which in turn may lead to adjustments to the
+Sprint Schedule. The schedule in its current form is a forecast of progress based upon
+the perceived amounts of time each set of use cases will require. Furthermore, the 
+quality assurance model and quality management need to be developed in S1.
+
+//[DELIVERABLES FOR S1]//////////////////////////////////////////////////////////////////
+
+    1. Quality Management Report
+    2. U1
+    3. U2
+    4. U4
+
+    :: Requirements R1, R5, R6, R8 will be met by the S1 deliverables.
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+    :: The above artifacts will be present in the official CMS repository 
+       {github.com/fireflyhacks/cms} on or before the date of 02/11/20; 23:59 EST, unless 
+       otherwise specified by the project manager via email.
+
+    :: The meeting to be held on the above date will present a working program capable
+       of meeting the use cases and requirements listed above, along with relevant
+       quality assurance artifacts. Questions, suggestions, and motion for changes will
+       be discussed at this time.
+
+    :: Please direct any and all inquiries/suggestions to 
+       Alec Goldstein: Project Manager {alec@alecgoldstein.com}; subject line of type 
+       "CMS: [summary-of-inquiry-or-concern]".
+
+#########################################################################################
+#                     AUTHOR: ALEC GOLDSTEIN, FIREFLY HACKS -- 2020                     #
+#########################################################################################
